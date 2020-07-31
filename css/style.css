@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background-color: #f8f8fa;
+}
+
+@font-face {
+    font-family: 'ipix';
+    src: url('ipix.ttf');
+}
+
+.main {
+    width: 3.75rem;
+}
+
+.header {
+    height: 0.5rem;
+    width: 3.75rem;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: ipix;
+}
+
+.header>.logo {
+    width: 1.1rem;
+    font-size: 0.16rem;
+    font-weight: 900;
+    text-align: center;
+    line-height: 0.5rem;
+    margin-left: 0.05rem;
+}
+
+.header>input {
+    height: 0.35rem;
+    width: 2.5rem;
+    margin: 0 0.1rem;
+    border-radius: 0.05rem;
+    border: none;
+    outline: none;
+    padding-left: 0.1rem;
+    background: #e5e6e7;
+    font-size: .106667rem;
+}
+
+.todo {
+    position: relative;
+    margin: 0.2rem 0.1rem;
+    padding: .066667rem .133333rem;
+    border-radius: .066667rem;
+    box-shadow: 0 .066667rem .133333rem #ccc;
+    padding-top: .266667rem;
+}
+
+.todo .title {
+    position: absolute;
+    top: -.133333rem;
+    display: block;
+    width: 1.066667rem;
+    height: .333333rem;
+    line-height: .333333rem;
+    border-radius: .08rem;
+    color: #fff;
+    text-align: center;
+    font-family: ipix;
+}
+
+.doing .title {
+    background: #d71c5e;
+}
+
+.done .title {
+    background: #3948ae;
+}
+
+.todo .list {
+    margin: 0 0.15rem;
+}
+
+.todo .num {
+    position: absolute;
+    right: .266667rem;
+    top: -.14rem;
+    display: block;
+    width: .266667rem;
+    height: .266667rem;
+    border-radius: 100%;
+    background-color: #d71c5e;
+    text-align: center;
+    line-height: .28rem;
+    color: #fff;
+    font-family: ipix;
+}
+
+.done .num {
+    background: #3948ae;
+}
+
+.doing .num {
+    background: #d71c5e;
+}
+
+.todo .todoitem {
+    display: flex;
+    min-height: 0.35rem;
+    line-height: 0.3rem;
+    background: white;
+    align-items: center;
+    border-radius: 0.05rem;
+    overflow: hidden;
+    margin-bottom: 0.1rem;
+}
+
+.todo .todoitem::before {
+    content: "";
+    height: 0.35rem;
+    width: 0.04rem;
+}
+
+.done .todoitem::before {
+    background: #3948ae;
+}
+
+.doing .todoitem::before {
+    background: #d71c5e;
+}
+
+.done .todoitem {
+    opacity: 0.4;
+}
+
+.todoitem input {
+    width: 0.2rem;
+    height: 0.2rem;
+    margin: 0.1rem;
+}
+
+.todoitem .content {
+    width: 2.5rem;
+    color: #666;
+}
+
+.todoitem .del {
+    width: 0.45rem;
+    height: 0.2rem;
+    font-size: 0.12rem;
+    border-radius: 0.1rem;
+    line-height: 0.2rem;
+    text-align: center;
+    color: white;
+}
+
+.done .del {
+    background: #00a2d8;
+}
+
+.doing .del {
+    background: #d71c5e;
+}
+
+.pc {
+    font-size: 200px!important;
+}
+
+.pc .main {
+    margin: 0 auto;
+}
