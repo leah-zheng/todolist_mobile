@@ -46,13 +46,13 @@ body {
     outline: none;
     padding-left: 0.1rem;
     background: #e5e6e7;
-    font-size: .106667rem;
+    font-size: .133333rem;
 }
 
 .todo {
     position: relative;
     margin: 0.2rem 0.1rem;
-    padding: .066667rem .133333rem;
+    padding: .066667rem .066667rem;
     border-radius: .066667rem;
     box-shadow: 0 .066667rem .133333rem #ccc;
     padding-top: .266667rem;
@@ -165,9 +165,29 @@ body {
 }
 
 .pc {
-    font-size: 200px!important;
+    font-size: 150px!important;
+    height: 100vh;
+}
+
+.pc body {
+    position: relative;
+    height: 100%;
+}
+
+.pc .main::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(51, 51, 51, 0.5); */
+    background: url(../img/erweima.png) no-repeat center center;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .pc .main {
     margin: 0 auto;
+    height: 100%;
 }
